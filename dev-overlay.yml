@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  error-handler:
+    image: nginxinc/nginx-unprivileged:1-alpine
+    user: ${USERID}
+    working_dir: /usr/share/nginx/html
+    volumes:
+      - ${DEV_OVERLAY_DIR}/static:/usr/share/nginx/html
+    ports:
+      - "8080:8080" # nginx port to access it directly
+    environment:
+      SOME_FEATURE_RELEVANT_FOR_DEBUGGING: "true"
+
+  fhir-resources:
+    command: npm run production:initialize -- --module all --samples true
