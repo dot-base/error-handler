@@ -5,7 +5,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "debug: chrome",
-            "url": "https://dotbase.local:8080/error/404/",
+            "url": "http://dotbase.local:8080/error/404/",
             "webRoot": "${workspaceFolder}/static",
             "breakOnLoad": true,
             "sourceMapPathOverrides": {
@@ -15,7 +15,7 @@
             "type": "firefox",
             "request": "launch",
             "name": "debug: firefox",
-            "url": "https://dotbase.local:8080/error/404/",
+            "url": "http://dotbase.local:8080/error/404/",
             "webRoot": "${workspaceFolder}/static",
             "breakOnLoad": true,
             "pathMappings": [ ]
