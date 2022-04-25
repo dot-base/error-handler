@@ -1,0 +1,24 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "debug: chrome",
+            "url": "http://dotbase.local:8080/error/404/",
+            "webRoot": "${workspaceFolder}/static",
+            "breakOnLoad": true,
+            "sourceMapPathOverrides": {
+            }
+        },
+        {
+            "type": "firefox",
+            "request": "launch",
+            "name": "debug: firefox",
+            "url": "http://dotbase.local:8080/error/404/",
+            "webRoot": "${workspaceFolder}/static",
+            "breakOnLoad": true,
+            "pathMappings": [ ]
+        }
+    ]
+}
